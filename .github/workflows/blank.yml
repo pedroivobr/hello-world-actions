@@ -33,7 +33,7 @@ jobs:
   deploy-hmg:
     runs-on: ubuntu-latest
     environment: 
-      name: dev
+      name: hmg
       url: 'http://www.google.com/'
     needs: deploy-dev
     steps:
@@ -43,7 +43,7 @@ jobs:
   deploy-prd:
     runs-on: ubuntu-latest
     environment: 
-      name: dev
+      name: prd
       url: 'http://www.google.com/'
     needs: deploy-hmg
     steps:
